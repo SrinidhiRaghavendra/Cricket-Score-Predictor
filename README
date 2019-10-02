@@ -1,3 +1,5 @@
+Developed in 2015 in PESIT.
+Contributors: Srinidhi Raghavendra, Vivek Bharadwaj and Vishal L Seshadri.
 This project is a proof of concept for using historical data to predict the result of a future match. It might not be best prediction algorithm. This project is also helpful to demonsrate the power of Apache spark for running jobs on huge data with limited resources.
 Data source - http://cricsheet.org/downloads/ipl.zip.
 
