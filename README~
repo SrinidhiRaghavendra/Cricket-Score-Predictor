@@ -1,0 +1,35 @@
+This project is a proof of concept for using historical data to predict the result of a future match. It might not be best prediction algorithm. This project is also helpful to demonsrate the power of Apache spark for running jobs on huge data with limited resources.
+Data source - http://cricsheet.org/downloads/ipl.zip.
+
+NOTES:
+1. For prediction using the data available in data/ipl_yaml.tar.gz, only the input file in the expected format and a output file to store the simulation is required.
+2. To add data in the same format or to explore how the data is processed, Untar the data/ipl_yaml.tar.gz file inside the data directory itself. All new data should be in the same format as is currently in the files in the ipl data. All details of each match is stored in a yaml file. 
+3. Structure - 
+	data/ipl -> raw data
+	data/json -> cleaned sructured data
+	data/csv -> values used for final prediction
+	src/event_count_scripts -> to generate the json files from raw yaml files
+	src/probability_scripts -> to generate the csv files from the json files
+	src/simulate.py -> final simulator
+	sample_input.py -> sample input for the simulator
+	
+4. For running the event_count_scripts, supply the path of the directory storing the yaml files as input.
+5. For running the probability scripts, supply the json input file name and an output file name to store the csv.
+6. For simulate.py, two inputs are required,an output file where the simulation result is to be stored and an input file in the following format:
+		ground
+		----
+		team1_name
+		team1 players seperated by newline
+		----
+		team2_name
+		team2 players seperated by newline
+		----
+		team1_bowlers(over;bowler seperated by newline)
+		----
+		team2_bowlers(over;bowler seperated by newline)
+		  
+Start the simulator as follows: spark simulate.py input_file 1/2 output_file --master local[4]
+
+Note: Requires spark to be install on the intended machine where the simulator is run.
+Requires the following python modules:
+pyspark, operator, sys, time, random, yaml, json, os

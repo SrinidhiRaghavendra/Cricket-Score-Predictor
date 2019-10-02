@@ -1,0 +1,69 @@
+M Chinnaswamy Stadium
+----
+RCB
+CH Gayle
+V Kohli
+AB de Villiers
+KL Rahul
+SR Watson
+Sachin Baby
+STR Binny
+CJ Jordan
+Iqbal Abdulla
+S Aravind
+YS Chahal
+----
+SRH
+DA Warner
+S Dhawan
+MC Henriques
+Yuvraj Singh
+DJ Hooda
+BCJ Cutting
+NV Ojha
+Bipul Sharma
+B Kumar
+BB Sran
+Mustafizur Rahman
+----
+1;S Aravind
+2;CH Gayle
+3;S Aravind
+4;CH Gayle
+5;SR Watson
+6;CH Gayle
+7;YS Chahal
+8;Iqbal Abdulla
+9;YS Chahal
+10;CJ Jordan
+11;SR Watson
+12;CJ Jordan
+13;YS Chahal
+14;S Aravind
+15;YS Chahal
+16;S Aravind
+17;CJ Jordan
+18;SR Watson
+19;CJ Jordan
+20;SR Watson
+----
+1;B Kumar
+2;BB Sran
+3;B Kumar
+4;BB Sran
+5;BCJ Cutting
+6;Mustafizur Rahman
+7;MC Henriques
+8;BCJ Cutting
+9;MC Henriques
+10;Mustafizur Rahman
+11;BCJ Cutting
+12;Bipul Sharma
+13;BB Sran
+14;Bipul Sharma
+15;MC Henriques
+16;BCJ Cutting
+17;Mustafizur Rahman
+18;B Kumar
+19;Mustafizur Rahman
+20;B Kumar
