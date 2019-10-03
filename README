@@ -15,7 +15,7 @@ NOTES:
 	
 4. For running the event_count_scripts, supply the path of the directory storing the yaml files as input.
 5. For running the probability scripts, supply the json input file name and an output file name to store the csv.
-6. For simulate.py, two inputs are required,an output file where the simulation result is to be stored and an input file in the following format:
+6. For simulate.py, three inputs are required,an output file where the simulation result is to be stored, the team batting first and an input file in the following format:
 		ground
 		----
 		team1_name

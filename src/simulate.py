@@ -5,25 +5,27 @@ import sys
 import time
 import random
 
+
+data_source = "../data/csv/"
 sc=SparkContext()
 
-bat_1_rdd = sc.textFile("bat_1.csv")
-bat_bowl_1_rdd = sc.textFile("bat_bowl_1.csv")
-bat_grd_1_rdd = sc.textFile("bat_grd_1.csv")
-bat_bowl_grd_1_rdd = sc.textFile("bat_bowl_grd_1.csv")
-bowl_1_rdd = sc.textFile("bowl_1.csv")
-grd_1_rdd = sc.textFile("grd_1.csv")
-bowl_grd_1_rdd = sc.textFile("bowl_grd_1.csv")
-all_ipl_1_rdd = sc.textFile("all_ipl_1.csv")
+bat_1_rdd = sc.textFile(data_source + "bat_1.csv")
+bat_bowl_1_rdd = sc.textFile(data_source + "bat_bowl_1.csv")
+bat_grd_1_rdd = sc.textFile(data_source + "bat_ground_1.csv")
+bat_bowl_grd_1_rdd = sc.textFile(data_source + "bat_bowl_ground_1.csv")
+bowl_1_rdd = sc.textFile(data_source + "bowl_1.csv")
+grd_1_rdd = sc.textFile(data_source + "ground_1.csv")
+bowl_grd_1_rdd = sc.textFile(data_source + "bowl_ground_1.csv")
+all_ipl_1_rdd = sc.textFile(data_source + "all_ipl_1.csv")
 
-bat_2_rdd = sc.textFile("bat_2.csv")
-bat_bowl_2_rdd = sc.textFile("bat_bowl_2.csv")
-bat_grd_2_rdd = sc.textFile("bat_grd_2.csv")
-bat_bowl_grd_2_rdd = sc.textFile("bat_bowl_grd_2.csv")
-bowl_2_rdd = sc.textFile("bowl_2.csv")
-grd_2_rdd = sc.textFile("grd_2.csv")
-bowl_grd_2_rdd = sc.textFile("bowl_grd_2.csv")
-all_ipl_2_rdd = sc.textFile("all_ipl_2.csv")
+bat_2_rdd = sc.textFile(data_source + "bat_2.csv")
+bat_bowl_2_rdd = sc.textFile(data_source + "bat_bowl_2.csv")
+bat_grd_2_rdd = sc.textFile(data_source + "bat_ground_2.csv")
+bat_bowl_grd_2_rdd = sc.textFile(data_source + "bat_bowl_ground_2.csv")
+bowl_2_rdd = sc.textFile(data_source + "bowl_2.csv")
+grd_2_rdd = sc.textFile(data_source + "ground_2.csv")
+bowl_grd_2_rdd = sc.textFile(data_source + "bowl_ground_2.csv")
+all_ipl_2_rdd = sc.textFile(data_source + "all_ipl_2.csv")
 '''
 print all_ipl_2_rdd.collect()
 print "\n-----------------\n"
