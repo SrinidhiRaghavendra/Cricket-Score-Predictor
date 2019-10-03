@@ -168,7 +168,7 @@ def simulate_ball(batsman,bowler,ball_no,ground,second_innings):
 	return runs
 
 def inning_simulate(batting_team,bowling_team,first_total,ground):
-	fp = open(sys.argv[3],"a")
+	fp = open(sys.argv[3],"w")
 	striker = batting_team[0]
 	non_striker = batting_team[1]
 	next_in = 2 
@@ -224,7 +224,7 @@ def inning_simulate(batting_team,bowling_team,first_total,ground):
 	return total
 
 def match_simulate(bat_first,ground,team1,team2,team1_name,team2_name,team1_bowlers,team2_bowlers):
-	fp = open(sys.argv[3],"a")
+	fp = open(sys.argv[3],"w")
 	if(bat_first == 1):
 		team_bat_first = team1
 		team_bat_first_name = team1_name
